@@ -1,0 +1,14 @@
+<?php
+include('head.php');
+include('header.php');
+include('hero.php');
+include('about.php');
+include('services.php');
+include('counts.php');
+include('cta.php');
+include('portfolio.php');
+include('testimonials.php');
+include('team.php');
+include('contact.php');
+include('footer.php');
+?>
