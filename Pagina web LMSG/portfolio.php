@@ -1,5 +1,4 @@
-<?php
-echo '
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -117,5 +116,3 @@ echo '
 
       </div>
     </section><!-- End Portfolio Section -->
-';
-?>

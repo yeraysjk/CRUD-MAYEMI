@@ -1,5 +1,4 @@
-<?php
-$string =  '<!-- ======= Footer ======= -->'.
+ '<!-- ======= Footer ======= -->'.
 '  <footer id="footer">'.
 '    <div class="footer-top">'.
 '      <div class="container">'.
@@ -92,5 +91,3 @@ $string =  '<!-- ======= Footer ======= -->'.
 ''.
 '</html>';
 
- echo $string; 
-?>

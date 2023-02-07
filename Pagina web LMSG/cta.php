@@ -1,5 +1,4 @@
-<?php
-echo '
+
 <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
@@ -11,5 +10,3 @@ echo '
         </div>
 
       </div>
-';
-?>

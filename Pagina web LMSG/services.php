@@ -1,5 +1,4 @@
-<?php
-echo '
+
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -47,5 +46,3 @@ echo '
 
       </div>
     </section><!-- End Services Section -->
-';
-?>

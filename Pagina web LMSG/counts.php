@@ -1,5 +1,4 @@
-<?php
-echo '
+
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts  section-bg">
@@ -43,5 +42,3 @@ echo '
 
       </div>
     </section><!-- End Counts Section -->
-';
-?>

@@ -1,5 +1,4 @@
- <?php
-echo '
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -86,5 +85,3 @@ echo '
     </section><!-- End Testimonials Section -->
 
     </section><!-- End Portfolio Section -->
-';
-?>
