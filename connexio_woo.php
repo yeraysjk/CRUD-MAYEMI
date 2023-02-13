@@ -15,5 +15,5 @@ $woocommerce = new Client(
             'query_string_auth' => true
     ]
 );
-print_r($woocommerce->get('products'));
+//print_r($woocommerce->get('products'));
 ?>
