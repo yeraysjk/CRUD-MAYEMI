@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ .'/vendor/autoload.php';
+require __DIR__ .'/assets/vendor/autoload.php';
 use Automattic\WooCommerce\Client;
 
 //###Claus PC X
