@@ -1,5 +1,4 @@
 
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -19,6 +18,7 @@
             </ul>
           </div>
         </div>
+        
 
         <div class="row portfolio-container" data-aos="fade-up">
 
@@ -115,4 +115,7 @@
         </div>
 
       </div>
+  
     </section><!-- End Portfolio Section -->
+
+    
