@@ -11,10 +11,14 @@
         <div class="row" data-aos="fade-in">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active">Tot</li>
+              <?php
+              foreach($woocommerce->get('products/categories') as $cat){
+                if($cat->id != 15)
+                  echo "<li data-filter='.filter-".$cat->name."'>".$cat->name."</li>";
+              }
+              ?>
+
             </ul>
           </div>
         </div>
@@ -22,51 +26,22 @@
 
         <div class="row portfolio-container" data-aos="fade-up">
 
-        <?php
-        foreach($woocommerce->get('products') as $product) {
-          $product_image = $product->images[0]->src;
-          $product_url = $product->permalink;
-          $product_cat = $product->categories[0]->name;
-          echo "<div class='col-lg-4 col-md-6 portfolio-item ".$product_cat.">";
-          echo "<div class='portfolio-wrap'>";
-          echo "<img src='".$product_image."' class='img-fluid' alt='".$product->name."'>";
-          echo "<div class='portfolio-links'>";
-          echo "<a href='".$product_image."' data-gallery='portfolioGallery' class='portfolio-lightbox' title='".$product->name."'><i class='bx bx-plus'></i></a>";
-          echo "</div>";
-          echo "</div>";
-          echo "</div>";
-        }
-        ?>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+          <?php
+          foreach($woocommerce->get('products') as $product) {
+            $product_image = $product->images[0]->src;
+            $product_url = $product->permalink;
+            $product_cat = $product->categories[0]->name;
+            echo "<div class='col-lg-4 col-md-6 portfolio-item filter-".$product_cat."'>";
+            echo "<div class='portfolio-wrap'>";
+            echo "<img src='".$product_image."' class='img-fluid' alt='".$product->name."'>";
+            echo "<div class='portfolio-links'>";
+            echo "<a href='".$product_image."' data-gallery='portfolioGallery' class='portfolio-lightbox' title='".$product->name."'><i class='bx bx-plus'></i></a>";
+            echo "<a href='portfolio-details.html' title='More Details'><i class='bx bx-link'></i></a>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+          }
+          ?>
 
         </div>
 
