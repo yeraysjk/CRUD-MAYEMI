@@ -13,7 +13,7 @@ Categoria:
   <option value="proba">Proba</option>
   <option value="proba2">Proba2</option>
   <?php
-    include(connexio_woo.php);
+    include("connexio_woo.php");
     foreach($woocommerce->get('products/categories') as $cat) {
       if($cat->id != 15)
         echo "<option value='".$cat->id."'>".$cat->name."</option>";
