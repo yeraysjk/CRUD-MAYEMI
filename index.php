@@ -1,4 +1,5 @@
 <?php
+include('connexio_woo.php');
 include('head.php');
 include('header.php');
 include('hero.php');

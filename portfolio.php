@@ -22,6 +22,8 @@
 
         <div class="row portfolio-container" data-aos="fade-up">
 
+        
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
