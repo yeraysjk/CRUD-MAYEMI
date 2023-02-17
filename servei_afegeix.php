@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form action="servei_afegeix_id.php" method="post">
+<form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data">
   Nom: <input type="text" name="name"><br>
   Preu: <input type="text" name="price"><br>
   Descripcció: <input type="text" name="description"><br>
