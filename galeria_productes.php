@@ -5,6 +5,8 @@ include('connexio_woo.php');
 foreach($woocommerce->get('products') as $post) {
     $src_image = $post->images[0]->src;
     $product_url = $post->permalink;
+    $product_cat = $post->categories[0]->name;
+    print_r($product_cat);
     echo "<div class='gallery'>";
     echo "<h1>";
     print_r($post->name);
