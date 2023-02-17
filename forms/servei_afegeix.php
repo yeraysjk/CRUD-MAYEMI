@@ -8,7 +8,10 @@
 Nom: <input type="text" name="name"><br>
 Preu: <input type="text" name="price"><br>
 Descripcció: <input type="text" name="description"><br>
-Categoria: <select name="categoria">
+Categoria: 
+<select name="categoria" id="cat">
+  <option value="proba">Proba</option>
+  <option value="proba2">Proba2</option>
   <?php
     include(connexio_woo.php);
     foreach($woocommerce->get('products/categories') as $cat) {
@@ -16,7 +19,6 @@ Categoria: <select name="categoria">
         echo "<option value='".$cat->id."'>".$cat->name."</option>";
     }
   ?>
-  
 </select>
 <input type="submit" value = "Enviar">
 </form>
