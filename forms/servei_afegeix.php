@@ -11,7 +11,7 @@
   Categoria: 
   <select name="categoria" id="cat">
     <?php
-      include("connexio_woo.php");
+      include("wwwhtml\CRUD-MAYEMI\connexio_woo.php");
       foreach($woocommerce->get('products/categories') as $cat) {
         if($cat->id != 15)
           echo "<option value='".$cat->id."'>".$cat->name."</option>";
