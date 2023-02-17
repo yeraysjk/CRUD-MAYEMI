@@ -1,6 +1,7 @@
 
 
     <!-- ======= Services Section ======= -->
+    
     <section id="services" class="services">
       <div class="container">
 
@@ -13,7 +14,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Actualitzar</a></h4>
+              <h4 class="title"><a href="servei_actualitzar.php">Actualitzar</a></h4>
               <p class="description"> Actualitzar productes</p>
             </div>
           </div>
