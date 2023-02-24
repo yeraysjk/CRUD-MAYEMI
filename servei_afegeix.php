@@ -1,9 +1,6 @@
-<html>
-<head>
-  <title>Afegeix Nom i Descripció</title>
-</head>
+<?php include "head.php"?>
 <body>
-
+<div>
 <form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data">
   Nom: <input type="text" name="name"><br>
   Preu: <input type="text" name="price"><br>
@@ -22,7 +19,6 @@
   <input type="file" name="fileToUpload" id="fileToUpload"><br>
   <input type="submit" value = "Enviar">
 </form>
-
-
-</body>
-</html>
+    </div>
+    </body>
+    </html>
