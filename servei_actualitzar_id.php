@@ -1,13 +1,15 @@
-include('connexio_woo.php');
 <html>   
+    <head>
+    <meta http-equiv="refresh" content="3; URL=index.php" />
+    </head>
 <?php
+include('connexio_woo.php');
 $data = [
     'id' => $_POST["id"],
     'name' => $_POST["name"],
     'short_description' => $_POST["short_description"]
 ];
-
-print_r($woocommerce->put('products/'.$_POST["id"].'', $data));
+$woocommerce->put('products/'.$_POST["id"].'', $data);
 ?>
 <body>
   Id: <?php echo $_POST["id"]; ?><br><br>  
