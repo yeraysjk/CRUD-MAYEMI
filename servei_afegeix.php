@@ -17,7 +17,8 @@
   </select><br>
   Imatge: 
   <input type="file" name="fileToUpload" id="fileToUpload"><br>
-  <input type="submit" value = "Enviar">
+  <input type="submit" value = "Crear">
+  
 </form>
     </div>
     </body>

@@ -10,7 +10,8 @@ foreach($woocommerce->get('products') as $post) {
     echo '<div class = "col-md-1 form-group">IMATGE:<input class = "form-control img_responsive" name= "src_image" src="'.$src_image.'" style = "width:4vw;" type="image"></div>';
     echo '<div class = "col-md-2 form-group">NOM DEL PRODUCTE:<input class = "form-control" name = "name" value = "'.$post->name.'" style = "width:100px; text-align:left;" type = "text"></div>';
     echo '<div class = "col-md-4 form-group">DESCRIPCIO DEL PRODUCTE<input class = "form-control" name = "short_description" value = "'.strip_tags($post->short_description).'" type = "text"></div>';
-    echo '<input type="submit" value = "Enviar">';
+    echo '<input type="submit" value = "Actualitzar" name = "update">';
+    echo '<input type="submit" value = "Borrar" name = "delete">';
     echo "</form>";
     echo "<hr>";
 }

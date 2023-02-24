@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!--<meta http-equiv="refresh" content="3; URL=index.php" />-->
+</head>
 <?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+print_r($_FILES["fileToUpload"]["name"]);
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
@@ -59,7 +63,6 @@ if ($uploadOk == 0) {
   include("connexio_woo.php");
   $data = [
     'name' => $_POST["name"],
-    'type' => 'simple',
     'regular_price' => $_POST["price"],
     'description' => $_POST["description"],
     'categories' => [
@@ -69,13 +72,13 @@ if ($uploadOk == 0) {
     ],
     'images' => [
         [
-            'src' => $target_file
+            'src' => 'uploads/armari-asai.jpg'
         ]
-  ]
+    ]
   ];
+  print_r($data);
   $woocommerce->post('products', $data);
   ?>
-
 </body>
 </html>
 
