@@ -8,7 +8,7 @@
 </div> 
 <div class="row"> 
 <div class="col-lg-6"> 
-<form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data" class="php-email-form">
+<form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data">
   <div class="row"> 
     <div class="col-md-6 form-group"> 
       Nom: <input type="text" name="name" class="form-control"><br>
