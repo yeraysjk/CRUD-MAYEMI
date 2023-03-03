@@ -21,7 +21,7 @@ foreach($woocommerce->get('products') as $post) {
     echo '<div class = "col-md-4 form-group">DESCRIPCIO DEL PRODUCTE<input class = "form-control" name = "short_description" value = "'.strip_tags($post->short_description).'" type = "text"></div>';
     echo '<input type="submit" value = "Actualitzar" name = "update">';
     echo '<input type="submit" value = "Borrar" name = "delete">';
-    echo "</div>"
+    echo "</div>";
     echo "</form>";
     echo "<hr>";
 }
@@ -30,4 +30,3 @@ foreach($woocommerce->get('products') as $post) {
         </div>
         </div>
         </section>
-        <?php include('footer.php')?>
