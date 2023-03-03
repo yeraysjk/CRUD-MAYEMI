@@ -1,8 +1,10 @@
 <?php include "head.php"?>
 <body>
 <div>
-<form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data">
-  Nom: <input type="text" name="name"><br>
+<form action="servei_afegeix_id.php" method="post" enctype="multipart/form-data" class="php-email-form">
+  <div class="col-md-6 form-group"> 
+    Nom: <input type="text" name="name" class="form-control"><br>
+  </div>
   Preu: <input type="text" name="price"><br>
   Descripcció: <input type="text" name="description"><br>
   Categoria: 
